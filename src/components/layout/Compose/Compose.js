@@ -4,8 +4,8 @@ import { Close, Delete, OpenInFull } from "@mui/icons-material";
 import { Button, IconButton } from "@mui/material";
 import JoditEditor from "jodit-react";
 import { useDispatch, useSelector } from "react-redux";
-import { modalSliceActions } from "../../../Store/model";
-import { sendEmailSliceActions } from "../../../Store/sendEmail";
+import { modalSliceActions } from "../../../store/modal";
+import { sendEmailSliceActions } from "../../../store/sendemail";
 
 const Compose = () => {
   const editor = useRef(null);

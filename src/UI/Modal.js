@@ -3,7 +3,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Dialog from "@mui/material/Dialog";
 import { useDispatch, useSelector } from "react-redux";
-import { modalSliceActions } from "../Store/model";
+import { modalSliceActions } from "../store/modal";
 import { DialogContent } from "@mui/material";
 import Compose from "../components/layout/Compose/Compose";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({

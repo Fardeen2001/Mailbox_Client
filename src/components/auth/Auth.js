@@ -21,9 +21,9 @@ import React, { useState } from "react";
 import classes from "./Auth.module.css";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { authSliceActions } from "../../Store/auth";
-import { fetchEmailActions } from "../../Store/fetchEmail";
-import { sendEmailSliceActions } from "../../Store/sendEmail";
+import { authSliceActions } from "../../store/auth";
+import { fetchEmailActions } from "../../store/fetchemail";
+import { sendEmailSliceActions } from "../../store/sendemail";
 
 const Auth = () => {
   const [showPasswordOne, setShowPasswordOne] = useState(false);
