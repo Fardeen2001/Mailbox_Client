@@ -4,7 +4,7 @@ export const FetchEmailData = (userMail) => {
   return async (dispatch) => {
     const fetchRequest = async () => {
       const res = await fetch(
-        `https://client-mailbox-default-rtdb.asia-southeast1.firebasedatabase.app/userEmail${EditedMail}.json`
+        `${process.env.REACT_APP_DATABASEID}userEmail${EditedMail}.json`
       );
       if (!res.ok) {
         throw new Error("invalid");
@@ -34,7 +34,7 @@ export const DeleteEmailsHandler = (email, userMail) => {
   return async (dispatch) => {
     const DeleteHandler = async () => {
       const res = await fetch(
-        `https://client-mailbox-default-rtdb.asia-southeast1.firebasedatabase.app/userEmail${EditedMail}.json`,
+        `${process.env.REACT_APP_DATABASEID}userEmail${EditedMail}.json`,
         {
           method: "PUT",
           body: JSON.stringify({
@@ -61,7 +61,7 @@ export const SendEmailData = (email, userSendEmail) => {
   return async (dispatch) => {
     const sendRequest = async () => {
       const res = await fetch(
-        `https://mailbox-client-123-default-rtdb.firebaseio.com/userEmail${editedEmail}.json`,
+        `${process.env.REACT_APP_DATABASEID}userEmail${editedEmail}.json`,
         {
           method: "PUT",
           body: JSON.stringify({

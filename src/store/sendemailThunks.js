@@ -5,7 +5,7 @@ export const fetchSentMails = (email) => {
   return async (dispatch) => {
     const fetchingSentMails = async () => {
       const res = await fetch(
-        `https://mailbox-client-123-default-rtdb.firebaseio.com/userSentEmails${EditedMail}.json`
+        `${process.env.REACT_APP_DATABASEID}userSentEmails${EditedMail}.json`
       );
       if (!res.ok) {
         throw new Error("invalid while fetching");
@@ -32,7 +32,7 @@ export const sendingSentMails = (emailData, userEmail) => {
   return async (dispatch) => {
     const sentMailsSending = async () => {
       const res = await fetch(
-        `https://mailbox-client-123-default-rtdb.firebaseio.com/userSentEmails${editedEmail}.json`,
+        `${process.env.REACT_APP_DATABASEID}userSentEmails${editedEmail}.json`,
         {
           method: "PUT",
           body: JSON.stringify({

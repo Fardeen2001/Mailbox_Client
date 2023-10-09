@@ -35,7 +35,7 @@ const fetchEmailSlice = createSlice({
       );
       if (existing !== -1) {
         state.emails[existing].isRead = true;
-        if (state.unreadMails >= 0) {
+        if (state.unreadMails > 0) {
           state.unreadMails--;
         }
       }

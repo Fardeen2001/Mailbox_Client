@@ -57,11 +57,9 @@ const Auth = () => {
     }
     let url;
     if (isLogin) {
-      url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDLTOJwJ0Jrj-D1RgwJGaVlzcG32K9jxXc";
+      url = process.env.REACT_APP_SIGNIN;
     } else {
-      url =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDLTOJwJ0Jrj-D1RgwJGaVlzcG32K9jxXc";
+      url = process.env.REACT_APP_SIGNUP;
     }
     try {
       const res = await fetch(url, {
