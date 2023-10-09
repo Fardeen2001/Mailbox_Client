@@ -1,0 +1,4 @@
+.emailList {
+  display: flex;
+  flex-direction: column;
+}

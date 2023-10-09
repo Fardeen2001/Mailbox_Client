@@ -1,0 +1,27 @@
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid whitesmoke;
+  font-size: 13px;
+}
+.setting svg {
+  font-size: 15px;
+}
+.settingLeft {
+  margin-left: 10px;
+  padding: 0;
+  align-items: center;
+  cursor: pointer;
+}
+.settingMiddle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.settingMiddle p {
+  align-items: center;
+  margin-left: 10px;
+}
