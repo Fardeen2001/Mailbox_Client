@@ -49,7 +49,7 @@ const Auth = () => {
     e.preventDefault();
     setIsLoading(true);
     if (name.length < 3 || password !== confirmPassword) {
-      alert(
+      console.log(
         "Invalid input: Name should be at least 3 characters and passwords should match."
       );
       setIsLoading(false);
@@ -93,7 +93,7 @@ const Auth = () => {
 
       setIsLoading(false);
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
       setIsLoading(false);
     }
   };

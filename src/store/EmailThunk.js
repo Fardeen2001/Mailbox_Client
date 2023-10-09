@@ -24,7 +24,7 @@ export const FetchEmailData = (userMail) => {
         })
       );
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 };
@@ -51,7 +51,7 @@ export const DeleteEmailsHandler = (email, userMail) => {
     try {
       await DeleteHandler();
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 };
@@ -78,7 +78,7 @@ export const SendEmailData = (email, userSendEmail) => {
     try {
       await sendRequest();
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 };

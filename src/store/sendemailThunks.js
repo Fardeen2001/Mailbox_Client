@@ -23,7 +23,7 @@ export const fetchSentMails = (email) => {
         })
       );
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 };
@@ -49,7 +49,7 @@ export const sendingSentMails = (emailData, userEmail) => {
     try {
       await sentMailsSending();
     } catch (error) {
-      alert(error.message);
+      console.log(error.message);
     }
   };
 };
