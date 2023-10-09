@@ -1,0 +1,35 @@
+.header {
+  display: grid;
+  grid-template-columns: 350px auto 200px;
+  height: 10vh;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  padding: 10px;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+.headerMidddle {
+  display: flex;
+  flex: 0.7;
+}
+.searchMail {
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  flex: 0.7;
+}
+.headerMidddle input {
+  border: 0;
+  background-color: transparent;
+  font-size: 15px;
+  flex: 1;
+  outline: 0;
+  letter-spacing: 1px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
