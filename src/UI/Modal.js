@@ -5,7 +5,7 @@ import Dialog from "@mui/material/Dialog";
 import { useDispatch, useSelector } from "react-redux";
 import { modalSliceActions } from "../Store/model";
 import { DialogContent } from "@mui/material";
-import Compose from "../Components/Layout/Compose/Compose";
+import Compose from "../components/layout/Compose/Compose";
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
