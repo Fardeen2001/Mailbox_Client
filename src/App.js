@@ -1,4 +1,4 @@
-import Auth from "./Components/Auth/Auth";
+import Auth from "./components/auth/Auth";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,12 +11,12 @@ import {
   DeleteEmailsHandler,
   SendEmailData,
   fetchEmailData,
-} from "./Store/EmailThunks";
+} from "./store/EmailThunk";
 import Header from "./components/Header/";
-import SideBar from "./Components/Layout/SideBar/SideBar";
+import SideBar from "./components/layout/Sidebar/SideBar";
 import classes from "./App.module.css";
 import Emaildetails from "./Components/Layout/EmailDetails/Emaildetails";
-import EmailList from "./Components/Layout/EmailList/EmailList";
+import EmailList from "./components/layout/EmailList/EmailList";
 import Compose from "../src/components/layout/Compose/Compose";
 import Modal from "./UI/Modal";
 import SentMails from "./Components/Layout/SentMails/SentMails";

@@ -17,7 +17,7 @@ import DraftsIcon from "@mui/icons-material/Drafts";
 import SendIcon from "@mui/icons-material/Send";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useDispatch, useSelector } from "react-redux";
-import { authSliceActions } from "../../../Store/auth";
+import { authSliceActions } from "../../../store/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { modalSliceActions } from "../../../Store/model";
 

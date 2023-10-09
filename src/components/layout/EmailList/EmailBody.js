@@ -3,8 +3,8 @@ import classes from "./EmailBody.module.css";
 import { Delete, StarOutline } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { fetchEmailActions } from "../../../Store/fetchEmail";
 import { Link } from "react-router-dom";
+import { fetchEmailActions } from "../../../Store/fetchEmail";
 
 const EmailBody = (props) => {
   const showWords = 10;
