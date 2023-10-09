@@ -19,7 +19,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { useDispatch, useSelector } from "react-redux";
 import { authSliceActions } from "../../../store/auth";
 import { Link, useNavigate } from "react-router-dom";
-import { modalSliceActions } from "../../../Store/model";
+import { modalSliceActions } from "../../../store/modal";
 
 const SideBar = () => {
   const dispatch = useDispatch();

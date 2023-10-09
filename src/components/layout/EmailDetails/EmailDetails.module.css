@@ -1,0 +1,56 @@
+.emailDetails {
+  box-shadow: 0 0 3px #ccc;
+  max-height: 100%;
+}
+.EmaildetailsHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  align-items: center;
+  min-height: 50px;
+  padding: 0px 15px;
+}
+.EmaildetailsHeaderLeft h4 {
+  white-space: pre-wrap;
+}
+.EmaildetailsHeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.EmaildetailsHeaderRight svg {
+  color: #ccc;
+  font-size: 15px;
+}
+.Emaildetailsbody {
+  padding: 0px 15px;
+  outline: 1px solid #1976d2;
+  min-height: 30vh;
+  max-height: 53vh;
+  overflow: auto;
+}
+.EmaildetailsbodyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.EmaildetailsBodyLeft {
+  display: flex;
+  align-items: center;
+  min-width: 30%;
+}
+.EmaildetailsBodyRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 30%;
+}
+.name {
+  margin-left: 10px;
+}
+.EmaildetailsBodyRight p {
+  margin-left: 10px;
+}
+.msg {
+  margin: 10px;
+}

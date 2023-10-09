@@ -12,7 +12,7 @@ import {
   SendEmailData,
   fetchEmailData,
 } from "./store/EmailThunk";
-import Header from "./components/Header/";
+import Header from "./components/layout/header/Header";
 import SideBar from "./components/layout/Sidebar/SideBar";
 import classes from "./App.module.css";
 import Emaildetails from "./Components/Layout/EmailDetails/Emaildetails";
