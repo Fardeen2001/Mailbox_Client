@@ -9,19 +9,19 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import {
   DeleteEmailsHandler,
+  FetchEmailData,
   SendEmailData,
-  fetchEmailData,
 } from "./store/EmailThunk";
 import Header from "./components/layout/header/Header";
 import SideBar from "./components/layout/Sidebar/SideBar";
 import classes from "./App.module.css";
-import Emaildetails from "./Components/Layout/EmailDetails/Emaildetails";
+import Emaildetails from "./components/layout/EmailDetails/EmailDetails";
 import EmailList from "./components/layout/EmailList/EmailList";
 import Compose from "../src/components/layout/Compose/Compose";
 import Modal from "./UI/Modal";
-import SentMails from "./Components/Layout/SentMails/SentMails";
-import { fetchSentMails, sendingSentMails } from "./Store/sentMailsThunks";
-import UnreadList from "./Components/Layout/Unread/UnreadList";
+import SentMails from "./components/layout/SentMails/SentMails";
+import { fetchSentMails, sendingSentMails } from "./store/sendemailThunks";
+import UnreadList from "./components/layout/Unread/UnreadList";
 // import useFetch from "./Store/CustomHooks/useFetch";
 // import { fetchEmailActions } from "./Store/fetchEmail";
 
@@ -40,7 +40,7 @@ function App() {
   const close = useSelector((state) => state.modal.close);
 
   useEffect(() => {
-    dispatch(fetchEmailData(userFetchEmail));
+    dispatch(FetchEmailData(userFetchEmail));
   }, [dispatch, userFetchEmail]);
   // const EditedMail = userFetchEmail.replace(/[@.]/g, "");
   // const [data] = useFetch(
